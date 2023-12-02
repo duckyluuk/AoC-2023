@@ -20,13 +20,12 @@ start_time = time.time()
 
 
 # input parsing
-lns = read_lines_list("2")
+lines = read_lines_list("2")
 
 
 
 # part 1
 print("PART 1:")
-lines = lns
 i = 0
 
 ans = sum(range(1, 101))
@@ -67,11 +66,9 @@ print(ans)
 
 # part 2
 print("PART 2:")
-ans_2 = 0
-
 i = 0
-
 ans_2 = 0
+
 for line in lines:
     i = i + 1
     line = line.strip()
@@ -106,8 +103,6 @@ for line in lines:
             MIN_BLUE = BLUE
             
     ans_2 += MIN_RED * MIN_GREEN * MIN_BLUE
-
-
 
 print(ans_2)
 
