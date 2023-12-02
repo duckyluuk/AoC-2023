@@ -1,5 +1,5 @@
-# input parsing: 17 bytes
-*I,=open("1.txt")
+# input parsing: 11 bytes
+*I,=open("1/1.txt")
 
 
 print("PART 1:")
