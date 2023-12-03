@@ -6,7 +6,7 @@ def read_raw_text(day):
 # return list of lines from input
 def read_lines_list(day):
     with open(f"{day}/{day}.txt") as f:
-        return f.readlines()
+        return list(map(str.strip,f.readlines()))
 
 # return groups of lines from input
 def read_groups(day):
