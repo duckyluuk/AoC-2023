@@ -16,11 +16,10 @@ from itertools import combinations, permutations, product
 import re
 import time
 
-start_time = time.time()
-
 # input parsing
 lns = read_lines_list("1")
 
+start_time = time.time()
 
 
 print("PART 1:")

@@ -15,11 +15,10 @@ import numpy as np
 from itertools import combinations, permutations, product
 import time
 
-start_time = time.time()
-
 # input parsing
 lines = read_lines_list("3")
 
+start_time = time.time()
 
 # part 1
 print("PART 1:")

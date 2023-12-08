@@ -15,12 +15,11 @@ import numpy as np
 from itertools import combinations, permutations, product
 import time
 
+moves, _, *lines = read_lines_list("8")
+
 start_time = time.time()
 
-
-
 # input parsing
-moves, _, *lines = read_lines_list("8")
 maps = {line[:3]: [line[7:10], line[12:15]] for line in lines}
 
 # part 1

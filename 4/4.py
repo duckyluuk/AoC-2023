@@ -15,12 +15,12 @@ import numpy as np
 from itertools import combinations, permutations, product
 import time
 
+lines = read_lines_list("4")
+
 start_time = time.time()
 
-
-
 # input parsing
-lines = [x.split(": ")[1] for x in read_lines_list("4")]
+lines = [x.split(": ")[1] for x in lines]
 
 
 

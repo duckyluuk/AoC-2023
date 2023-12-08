@@ -15,15 +15,16 @@ import numpy as np
 from itertools import combinations, permutations, product
 import time
 
-start_time = time.time()
 
 
 
 # input parsing
 lines = read_raw_text("5").split("\n\n")
+
+start_time = time.time()
+
 seeds = list(map(int,lines[0].split()[1:]))
 maps = [[list(map(int,ln.split())) for ln in cat.split("\n")[1:]] for cat in lines[1:]]
-
 
 
 
