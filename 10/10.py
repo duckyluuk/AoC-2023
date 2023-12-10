@@ -15,16 +15,13 @@ import numpy as np
 from itertools import combinations, permutations, product
 import time
 
-start_time = time.time()
-
-
 
 # input parsing
 lines = read_grid_2d('10')
 
+start_time = time.time()
+
 start = (29, 21) # x, y
-
-
 
 # part 1
 print("PART 1:")
@@ -86,7 +83,6 @@ print(ans//2)
 
 # part 2
 print("PART 2:")
-print(poly)
 ans_2 = 0
 
 from matplotlib.path import Path
@@ -99,10 +95,7 @@ for y in range(len(lines)):
         if p.contains_point((x, y)):
             ans_2 += 1
 
-
-
 print(ans_2)
-
 
 
 print("took %s seconds" % (time.time() - start_time))
